@@ -1,0 +1,212 @@
+.imageR{
+height: 600px;
+width: 800px;
+    background-image: url(imgs/registro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imageL{
+    height: 600px;
+width: 800px;
+    background-image: url(imgs/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio,.registrarse{
+
+    height: 600px;
+}
+
+form{
+
+    border: solid black 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(imgs/fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+align-items: center;
+ justify-items: center
+}
+
+
+.cajaL,.cajaR{
+
+    display:flex;
+    flex-direction: column;
+    
+    
+        padding-top: 0px;
+        margin-top: 0px;
+        background-color: rgba(240, 248, 255, 0.578);
+        
+}
+
+h2,h1{
+    
+    width: 100%;
+    color:#559bd4;
+    text-align: center;
+
+}
+
+
+
+    h1{
+
+        height: 35px;
+        margin-top: 10px;
+        color:color-mix(in srgb-linear, rgb(22, 38, 255) 90%, rgb(255, 255, 255) 10%);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        
+    }
+
+
+    input{
+
+        width: 200px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #93C5FD;
+        border-color: #F472B6;
+        border-radius: 15px;
+    }
+    input::placeholder{
+
+        text-align: center;
+        color:#ffffff;
+        
+    }
+    .mover{
+
+        margin-top: 40px;
+        
+    }
+
+    .boton{
+
+        margin-top: 30px;
+        width: 80px;
+        border-radius: 20px;
+        background-color: #2563EB;
+        color:#FFFFFF;
+        cursor:pointer;
+        
+    }
+
+    .boton:hover{
+
+        
+        width: 70px;
+        border-radius: 25px;
+        background-color: #215ad4;
+        color:#d6d6d6;
+        transform: translateY(5px);
+       
+        
+    }
+    #BotonR{
+
+        pointer-events: none;
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    .cajaBoton{
+
+        display: flex;
+        justify-content: center;
+    }
+    .cambiar{
+
+        text-decoration: underline;
+        color:#60A5FA;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .inicio,
+.registrarse{
+    transition: all .6s ease;
+}
+
+.oculto{
+    opacity:0;
+    transform:scale(.8);
+    pointer-events:none;
+}
+
+.visible{
+    opacity:1;
+    transform:scale(1);
+}
+
+#azul{
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#rosa{
+  width: 35px;
+    height: 35px;
+    cursor: pointer;
+
+}
+
+#rosa:hover,#azul:hover{
+
+opacity: 0.8;
+
+}
+
+header, header div{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+   
+}
+
+header {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    z-index: 1000;
+}

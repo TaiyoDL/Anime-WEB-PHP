@@ -1,0 +1,320 @@
+/* ==========================
+        ESTILOS GENERALES
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:linear-gradient(135deg,#f7d6ff,#dcefff);
+    display:flex;
+    
+    flex-direction: column;
+    padding:50px;
+    padding-top:5px ;
+}
+
+/* ==========================
+        TARJETA
+========================== */
+
+.Anime{
+    width:min(420px,95vw);
+    position:relative;
+    transition:.35s;
+}
+
+.Anime:hover{
+    transform:translateY(-10px);
+    z-index: 10;
+}
+
+/* SE HA ELIMINADO EL BLOQUE .Anime::before QUE HACÍA EL DESTELLO TRANSPARENTE */
+
+/* ==========================
+        DATOS
+========================== */
+
+.datos{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    box-shadow: 0 20px 40px rgba(0,0,0,.20);
+}
+
+.datos p{
+    margin:12px 18px;
+}
+
+.datos *{
+    color:#1d3557;
+}
+
+/* ==========================
+        FOTO
+========================== */
+
+.foto{
+    overflow:hidden;
+}
+
+.foto img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+}
+
+.Anime:hover .foto img{
+    transform:scale(1.06);
+}
+
+/* ==========================
+        TITULO
+========================== */
+
+.nombre{
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+    color:#222;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+
+/* ==========================
+        DESCRIPCION
+========================== */
+
+.descripcion{
+    color:#555;
+    line-height:1.7;
+    text-align:justify;
+    max-height:150px;
+    overflow-y:auto;
+}
+
+/* Scroll bonito */
+.descripcion::-webkit-scrollbar{
+    width:6px;
+}
+
+.descripcion::-webkit-scrollbar-thumb{
+    background:#8dbfff;
+    border-radius:20px;
+}
+
+/* ==========================
+        INFORMACION
+========================== */
+
+.contenido{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px;
+    border-top:1px solid #ececec;
+    border-bottom:1px solid #ececec;
+    background:#fafafa;
+}
+
+.creacion{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px;
+    border-bottom:1px solid #ececec;
+}
+
+/* ==========================
+        GENEROS
+========================== */
+
+.generos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    padding:15px;
+}
+
+.generos p{
+    background:linear-gradient(90deg,#0075FF,#5e9dff);
+    color:white;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:14px;
+    cursor:pointer;
+    transition:.3s;
+    margin:0;
+}
+
+.generos p:hover{
+    transform:translateY(-3px);
+    background:linear-gradient(90deg,#0063d1,#4d8cff);
+    box-shadow:0 8px 18px rgba(0,117,255,.35);
+}
+
+/* ==========================
+        FINAL
+========================== */
+
+.final{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    background:#fafafa;
+}
+
+.fecha{
+    font-weight:600;
+}
+
+.nota{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:22px;
+    font-weight:bold;
+    color:#ffb800;
+}
+
+#star{
+    width:20px;
+    height:20px;
+}
+
+/* ==========================
+        CARTEL (Manga/Poster Pop-up)
+========================== */
+
+.cartel{
+    position:absolute;
+    left:440px;
+    top:10px;
+    width:260px;
+    border-radius:18px;
+    overflow:hidden;
+    border:3px solid white;
+    box-shadow: 0 20px 45px rgba(0,0,0,.35);
+    opacity:0;
+    transform:translateX(-20px) scale(.92);
+    transition:
+    opacity .45s,
+    transform .45s;
+    pointer-events:none;
+    backdrop-filter:blur(8px);
+}
+
+.Anime:hover .cartel{
+    opacity:1;
+    transform:translateX(0) scale(1);
+}
+
+.cartel img{
+    width:100%;
+    display:block;
+    z-index: 100;
+    position:relative;
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+    body{
+        padding:20px;
+    }
+    .cartel{
+        display:none;
+    }
+}
+
+.contenedorAnimes{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+header{
+    
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   
+}
+
+.izquierda,.derecha{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     margin-bottom: 15px;
+    align-items: center;
+    margin-top: 0px;
+}
+.opcion{
+    
+    border: solid black 2px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    background:linear-gradient(180deg,#edbcf9,#e0ebf9b3);
+}
+
+.nombre{
+
+    font-size: 15px;
+    margin-bottom: 15px;
+     font-family: Jost, sans-serif;
+  font-weight: bold;
+background: linear-gradient(to bottom,blue,red);
+  
+   background-clip: text;
+    -webkit-background-clip: text;
+    
+    color: transparent;
+}
+
+.opcion:hover{
+
+    transform: translateY(-5px);
+    box-shadow:0 8px 18px rgba(238, 59, 229, 0.613);
+}
+
+header div a{
+
+    text-decoration: none;
+}
+
+.titulo{
+
+font-size: 40px;
+text-align: center;
+margin-bottom: 10px;
+color:#db74f5;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-decoration: wavy;
+}
+
+.titulo:hover{
+
+    transform: translateY(-5px);
+    
+    
+
+
+    
+}

@@ -1,0 +1,148 @@
+h2{
+
+    color:#F4F1FA;
+}
+
+p{color:#AAA4B8;}
+
+
+body{
+
+width: 98%;
+    background-color: #151421;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    
+}
+
+header{
+    position: sticky;
+    width: 97.5%;
+
+    background-color: #A78BFA;
+    padding: 1%;
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+button{
+
+    background-color: #dd9cd9;
+    color:#F4F1FA;
+    padding: 1%;
+    border-radius: 20px;
+    border: solid 2px #F472B6;
+    cursor: pointer;
+    margin-right: 10px;
+}
+button:hover{
+
+background: linear-gradient(to left, #dd9cd9,pink);
+padding: 1.1%;
+font-size: 20px;
+}
+
+.izquierda{
+
+    width: 50%;
+    
+}
+
+.derecha{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background:linear-gradient(to bottom,pink,rgb(214, 11, 11));
+    background-clip: text;
+    color:transparent;
+    font-size: 140%;
+    text-shadow: 5px 5px 5px rgba(255, 0, 242, 0.382);
+    
+}
+
+main{
+
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+    
+}
+
+.autor{
+
+    background-color: #211F32;
+    width: 10%;
+    margin: 1%;
+    
+    text-align: center;
+    padding:10px 10px 50px 10px ;
+    border-radius: 100px  100px 10px 10px;
+    border: solid 5px #F472B6;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.info{
+
+    height: 50%;
+    border-bottom: solid #F4F1FA 2px;
+}
+
+.animes{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   max-height: 300px;
+    height: 50%;
+    padding: 10px 0px -1px;
+     overflow-y: scroll;
+     margin: 10px 0px;
+}
+
+.anime{
+
+    color:#F4F1FA;
+    margin:5px;
+}
+
+.sesion{
+
+    margin-left: 10px;
+}
+
+#buscador{
+
+    width: 10%;
+    background-color: #F472B6;
+    border-color: #A78BFA;
+    color:#F4F1FA;
+    
+    
+}
+#buscador::placeholder{
+
+    color:#F4F1FA;
+}
+.buscar{
+margin-top: 15px;
+
+}
+
+#lupa{
+position: relative;
+    top:5px;
+    left: 4px;
+}
+
+
