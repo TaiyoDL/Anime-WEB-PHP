@@ -90,6 +90,7 @@ flex-wrap: wrap;
     border: solid 5px #F472B6;
     min-height: 400px;
     max-height: 400px;
+    
 }
 
 .info{
@@ -127,7 +128,9 @@ flex-wrap: wrap;
     background-color: #F472B6;
     border-color: #A78BFA;
     color:#F4F1FA;
-    
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
     
 }
 #buscador::placeholder{
@@ -137,12 +140,14 @@ flex-wrap: wrap;
 .buscar{
 margin-top: 15px;
 
+
 }
 
 #lupa{
 position: relative;
     top:5px;
     left: 4px;
+    width: 20px;
 }
 
 

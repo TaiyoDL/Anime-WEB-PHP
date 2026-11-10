@@ -1,0 +1,88 @@
+*{box-sizing: border-box;}
+
+body{
+
+    background-color: #121923;
+}
+
+header{
+    background-color: #5798DC;
+
+    width: 100%;
+    padding: 0.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    position: sticky;
+}
+
+header div{
+ display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+header div .opcion{
+text-decoration: none;
+    margin: 10px;
+    background-color: #35C6C0;
+    border: solid #344352 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+    padding: 10px;
+}
+ header div *{
+    margin: 10px;
+     text-align: center;
+ }
+
+ .derecha{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ main{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+ }
+
+ .casa{
+
+    background-color: #1C2936;
+    border: solid 2px #344352;
+    padding: 10px;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 15px;
+    margin: 15px;
+ }
+
+ .animes{
+
+    overflow-y: scroll;
+    min-height: 300px;
+ }
+ .nombre{
+
+    border-bottom: solid 2px #344352;
+    color: #F0F3F7;
+    margin:20px;
+    text-align: center;
+    
+    
+ }
+ .anime{
+    text-align: center;
+    color:#A1ACBA;
+ }

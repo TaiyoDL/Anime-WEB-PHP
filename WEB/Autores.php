@@ -27,7 +27,7 @@ include_once "../src/Conexion.php";
     
 <header>
 
-   <div class="izquierda"> <a href="Animes.php"><button>Ver mis animes</button></a> <a href=""><button>Buscar casa animadora</button></a><a href=""><button>Buscar Anime</button></a></div>
+   <div class="izquierda"> <a href="Animes.php"><button>Ver mis animes</button></a> <a href="CasaAnimadora.php"><button>Buscar casa animadora</button></a><a href=""><button>Buscar Anime</button></a></div>
 
    <div class="derecha"><?=$_SESSION['usuario']?>  <a class='sesion' href="cerrar_sesion.php">Cerrar sesión</a></div>
 </header>
@@ -101,7 +101,7 @@ $autores[count($autores)-1]['obras'][]=$fila2['nombre'];
 let div=document.createElement("div");
 div.classList.add("autor");
 
-div.innerHTML=`
+let html=`
 <div class='info'>
 <h2 class='nombreAutor'>${autores[i].nombre}</h2>;
 
@@ -114,7 +114,7 @@ div.innerHTML=`
 
  for(let j=0;j<autores[i].obras.length;j++){
 
- div.innerHTML+=`
+ html+=`
 
  <a class="anime">
 ${autores[i].obras[j]}
@@ -123,7 +123,7 @@ ${autores[i].obras[j]}
  }
 
 
-    
+    div.innerHTML=html;
     main.appendChild(div);
     }
 
@@ -137,7 +137,7 @@ if(edad==null || edad==undefined || !edad){
 
 edad="";
 }
-div.innerHTML=`
+let html=`
 <div class='info'>
 <h2 class='nombreAutor'>${autores[i].nombre}</h2>;
 
@@ -150,7 +150,7 @@ div.innerHTML=`
 
  for(let j=0;j<autores[i].obras.length;j++){
 
- div.innerHTML+=`
+html+=`
 
  <a class="anime">
 ${autores[i].obras[j]}
@@ -159,7 +159,7 @@ ${autores[i].obras[j]}
  }
 
 
-    
+    div.innerHTML=html;
     main.appendChild(div);
     }
     }

@@ -39,7 +39,7 @@ include_once "../src/Conexion.php";
         
         <div class="opcion"><a href="Autores.php">Buscar Autor</a></div>
         
-        <div class="opcion"><a href="">Buscar Casa Animadora</a></div>
+        <div class="opcion"><a href="CasaAnimadora.php">Buscar Casa Animadora</a></div>
 
         </div>
 
